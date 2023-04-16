@@ -4,18 +4,15 @@
 
 
 body {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: #000000;
+  background: hsl(225, 24%, 10%);
 }
 
 .grid-container {
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin-top: 10em;
   border: 2px solid #4caecf;
-  border-radius: 5px;
 }
 
 .current-input {
@@ -23,7 +20,7 @@ body {
   border: none;
   box-shadow: none;
   width: 100%;
-  border-bottom: 2px solid #111;
+  border-bottom: 1px solid #4caecf;
   padding: 20px;
   text-align: right;
   color: #4caecf;
@@ -31,39 +28,63 @@ body {
 }
 
 .previous-input {
-  background: none;
-  border: none;
-  box-shadow: none;
-  padding: 10px;
-  width: 100%;
-  text-align: right;
+  background: #fff;
+  padding: 15px 25px;
   color: #4caecf;
-  font-size: 15px;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: right;
+  height: 95px;
+  overflow: auto;
+  width:  100%;
+  outline: none;
+  border: none;
+}
+
+button{
+  padding: 10px 20px;
+  border:  none;
 }
 
 .operations {
-  padding: 10px;
-  display: grid;
-  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
-  grid-gap: 10px;
-  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  background: transparent;
+  padding:  10px 20px 10px 20px;
+  border-radius: 15px;
+  margin-top: 5%;
  
 }
 
 .operation {
-  background: transparent;
-  border: 1px solid #4caecf;
-  padding: 20px;
-  color: #4caecf;
-  border-radius: 10px;
-  font-size: 22px;
-  font-weight: 500;
+  padding:  7px 0 3px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 0 hsl(28, 16%, 65%);
+  background: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: hsl(218, 13%, 12%);
   cursor: pointer;
 }
 
-.data-all-clear, .data-equal {
-  grid-column: span 3;
+.data-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  background-color: #4caecf;
+  box-shadow: 0 4px 0 hsl(28, 16%, 65%);
+  background: #4caecf;
+}
+
+.data-equal, .data-all-clear {
+  width: 150px;
+  color: #fff;
+  box-shadow: 0 4px 0 hsl(28, 16%, 65%);
+  background: #4caecf;
 }
 
