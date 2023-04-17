@@ -1,11 +1,18 @@
-const previousInput = document.querySelector('.previous-input');
-const currentInput = document.querySelector('.current-input');
-const equalsButton = document.querySelector('.data-equal');
-const allClearButton = document.querySelector('.data-all-clear');
-const deleteButton = document.querySelector('.data-delete')
-const operationButtons = document.querySelectorAll('.data-operation');
-const numberButtons = document.querySelectorAll('.data-number');
+const numberButtons = document.querySelectorAll(".is-num");
+const clearButton = document.querySelector(".is-clear");
+const largeDisplay = document.querySelector(".large-display");
 
-let currentNumber = '',
-    previousNumber = '',
-    operation = undefined;
+let currentInput = "";
+let previousInput = "";
+
+numberButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    currentInput += event.target.textContent;
+    largeDisplay.textContent = currentInput;
+  });
+});
+
+clearButton.addEventListener("click", () => {
+  currentInput = "0";
+  largeDisplay.textContent = currentInput;
+});

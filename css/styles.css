@@ -1,90 +1,68 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-body {
-  display: flex;
-  justify-content: center;
-  background: hsl(225, 24%, 10%);
-}
-
-.grid-container {
-  max-width: 400px;
-  margin-top: 10em;
-  border: 2px solid #4caecf;
-}
-
-.current-input {
-  background: none;
-  border: none;
-  box-shadow: none;
-  width: 100%;
-  border-bottom: 1px solid #4caecf;
-  padding: 20px;
-  text-align: right;
-  color: #4caecf;
-  font-size: 30px;  
-}
-
-.previous-input {
-  background: #fff;
-  padding: 15px 25px;
-  color: #4caecf;
-  font-size: 55px;
-  font-weight: bold;
-  text-align: right;
-  height: 95px;
-  overflow: auto;
-  width:  100%;
-  outline: none;
-  border: none;
-}
-
-button{
-  padding: 10px 20px;
-  border:  none;
-}
-
-.operations {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 400px;
-  background: transparent;
-  padding:  10px 20px 10px 20px;
-  border-radius: 15px;
-  margin-top: 5%;
- 
-}
-
-.operation {
-  padding:  7px 0 3px 0;
-  border-radius: 5px;
-  box-shadow: 0 4px 0 hsl(28, 16%, 65%);
-  background: #fff;
-  font-size: 2rem;
-  font-weight: 600;
-  width: 80px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: hsl(218, 13%, 12%);
-  cursor: pointer;
-}
-
-.data-delete {
+#root {
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  box-shadow: 0 4px 0 hsl(28, 16%, 65%);
-  background: #4caecf;
+  flex-direction: column;
 }
 
-.data-equal, .data-all-clear {
-  width: 150px;
-  color: #fff;
-  box-shadow: 0 4px 0 hsl(28, 16%, 65%);
-  background: #4caecf;
+.main {
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
+.display {
+  text-align: right;
+  border: 1px solid gray;
+  margin-bottom: 1em;
+  padding: 10px;
+}
+
+.small-display {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.large-display {
+  font-size: 40px;
+}
+
+.inputs {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.inputs button {
+  font-size: 28px;
+  padding: 20px;
+  color: white;
+  background-color: gray;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.inputs button:hover {
+  cursor: pointer;
+}
+
+.is-zero,
+.is-clear {
+  grid-column: span 3;
+}
+
+.is-zero {
+  background-color: darkseagreen !important;
+}
+
+.is-clear {
+  background-color: cornflowerblue !important;
+}
