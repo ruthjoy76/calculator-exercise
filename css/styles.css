@@ -11,19 +11,43 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 1em;
+}
+
+h1 {
+  margin-bottom: 1em;
 }
 
 .main {
   padding: 1em;
   border: 1px solid black;
   border-radius: 5px;
+  width: 100%;
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .main {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .main {
+    max-width: 400px;
+  }
 }
 
 .display {
-  text-align: right;
   border: 1px solid gray;
   margin-bottom: 1em;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.display input {
+  text-align: right;
+  border: none;
 }
 
 .small-display {
