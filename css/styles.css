@@ -12,42 +12,40 @@
   justify-content: center;
   flex-direction: column;
   padding: 1em;
+  background-image: url(/images/calculator\ bkg.svg);
+  background-size: cover;
 }
 
-h1 {
+h1, h2{
   margin-bottom: 1em;
+  color: #fff;
+}
+
+span {
+  color: #4caecf;
 }
 
 .main {
   padding: 1em;
-  border: 1px solid black;
+  border: 2px solid #fff;
   border-radius: 5px;
   width: 100%;
 }
 
-@media screen and (min-width: 601px) and (max-width: 960px) {
-  .main {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 961px) {
-  .main {
-    max-width: 400px;
-  }
-}
-
 .display {
-  border: 1px solid gray;
+  border: 1px solid #fff;
   margin-bottom: 1em;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 .display input {
   text-align: right;
   border: none;
+  color: #fff;
+  background-color: #000;
 }
 
 .small-display {
@@ -69,24 +67,37 @@ h1 {
   font-size: 28px;
   padding: 20px;
   color: white;
-  background-color: gray;
-  border: 1px solid gray;
-  border-radius: 5px;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .inputs button:hover {
   cursor: pointer;
 }
 
-.is-zero,
+.is-equals,
 .is-clear {
   grid-column: span 3;
+  border-radius: 10px !important;
 }
 
-.is-zero {
-  background-color: darkseagreen !important;
+.is-equals {
+  background-color: #4caecf !important;
 }
 
 .is-clear {
-  background-color: cornflowerblue !important;
+  background-color: #4caecf !important;
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .main {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .main {
+    max-width: 400px;
+  }
 }
