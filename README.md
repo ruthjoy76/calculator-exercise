@@ -8,7 +8,7 @@
 ## **Preview**
 <br>
 
-![Alt text](/images/Screenshot%20(162).png)
+![Alt text](images/Screenshot%20(162).png)
 
 <br>
 
