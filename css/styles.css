@@ -12,7 +12,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 1em;
-  background-image: url(images/calculator\ bkg.svg);
+  background-image: url(/images/calculator\ bkg.svg);
   background-size: cover;
 }
 
