@@ -5,14 +5,6 @@
 <br />
 <br />
 
-## **Preview**
-<br>
-
-![Alt text](images/Screenshot%20(162).png)
-
-<br>
-
-
 ## **Built With**
 
 - HTML5  
