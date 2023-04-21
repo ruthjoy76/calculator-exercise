@@ -12,8 +12,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 1em;
-  background-image: url(/images/calculator\ bkg.svg);
-  background-size: cover;
+  background-color: #000000;
 }
 
 h1, h2{
